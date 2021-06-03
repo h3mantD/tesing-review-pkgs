@@ -7,6 +7,6 @@ use Faker\Generator as Faker;
 
 $factory->define(ReviewReply::class, function (Faker $faker) {
     return [
-        'reply' => $faker->text(20),
+        'reply' => $faker->sentence,
     ];
 });
