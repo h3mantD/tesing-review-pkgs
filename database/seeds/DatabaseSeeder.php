@@ -51,6 +51,6 @@ class DatabaseSeeder extends Seeder
 			);
 		}
 
-        $this->call([ReviewReplySeeder::class]);
+        $this->call([ReviewReplySeeder::class, ReviewLikeSeeder::class]);
     }
 }
